@@ -1,12 +1,12 @@
 # gcc_helpers
 Tools to help with gcc
 
-Example usage in Linux kernel using Makefile:
+#### Example usage in Linux kernel using Makefile
 
 MY_CFLAGS = $(DBGFLAGS) -Wall -Wextra -Wconversion -Wshadow -Wstrict-prototypes
 CFLAGS_sbull.o += $(MY_CFLAGS)
 
-# Add your debugging flag (or not) to ccflags.
+#### Add your debugging flag (or not) to ccflags.
 ifeq ($(DEBUG),y)
 	DEBFLAGS = -O -g -DSBULL_DEBUG # "-O" is needed to expand inlines
 else
